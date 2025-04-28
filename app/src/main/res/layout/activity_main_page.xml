@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" android:gravity="center_horizontal" tools:context=".MainPage">
+
+    <Button
+        android:id="@+id/btnPremierLeague"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:foregroundGravity="center"
+        android:layout_marginTop="100sp"
+        android:text="English League"
+        android:textStyle="bold"/>
+    <Button
+        android:id="@+id/btnSpanish"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:foregroundGravity="center"
+        android:layout_marginTop="100sp"
+        android:text="Spanish League"
+        android:textStyle="bold"/>
+
+</LinearLayout>

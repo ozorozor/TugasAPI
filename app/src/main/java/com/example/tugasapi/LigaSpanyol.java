@@ -16,7 +16,7 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
-public class MainActivity extends AppCompatActivity {
+public class LigaSpanyol extends AppCompatActivity {
 
     private RecyclerView recyclerView;
     private TeamAdapter teamAdapter;
@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void fetchTeams() {
         ApiService apiService = RetrofitClient.getApiService();
-        Call<TeamsResponse> call = apiService.getAllTeams("English Premier League");
+        Call<TeamsResponse> call = apiService.getTeam2("Spanyol Premier League");
 
         call.enqueue(new Callback<TeamsResponse>() {
             @Override
